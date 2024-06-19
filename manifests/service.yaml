@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: autodeploy02
-  namespace: namespace-workflow-1718788860443
+  namespace: namespace-workflow-1718789039457
   labels:
     kubernetes.azure.com/generator: devhub
 spec:

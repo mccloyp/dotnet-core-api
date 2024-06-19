@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: autodeployXX
+  name: autodeploy02
   labels:
-    app: autodeployXX
+    app: autodeploy02
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1718787934616
+  namespace: namespace-workflow-1718788860443
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: autodeployXX
+      app: autodeploy02
   template:
     metadata:
       labels:
-        app: autodeployXX
+        app: autodeploy02
     spec:
       containers:
-        - name: autodeployXX
-          image: acrworkflow1718787934616.azurecr.io/image-workflow-1718787934616:latest
+        - name: autodeploy02
+          image: acrworkflow1718788860443.azurecr.io/image-workflow-1718788860443:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000

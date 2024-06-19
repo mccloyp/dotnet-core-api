@@ -1,4 +1,4 @@
-name: autodeployXX
+name: autodeploy01
 "on":
     push:
         branches:
